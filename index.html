@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mercatilim · jogo de mercadinho para Android</title>
+<meta name="description" content="Mercatilim: monte e faça crescer o seu mercadinho. Jogo para Android no Google Play.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Silkscreen&display=swap">
+<style>
+  :root{--azul:#1d5e92;--marinho:#0b2239;--ouro:#ffd166;--tinta:#163246;--suave:#4f6d84;
+    --linha:#d3e1ec;--cartao:#ffffff;--fundo:#f2f6fa}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--fundo)}
+  body{font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    color:var(--tinta);line-height:1.6;font-size:15px;-webkit-text-size-adjust:100%}
+  a{color:var(--azul)}
+  .faixa{background:var(--marinho);color:#fff;padding:26px 16px 22px}
+  .faixa-in{max-width:760px;margin:0 auto}
+  .corpo{max-width:792px;margin:0 auto;padding:0 16px 32px}
+  .marca{display:flex;align-items:center;gap:10px;margin-bottom:14px;text-decoration:none}
+  .marca svg{width:34px;height:34px;flex:0 0 34px}
+  .marca span{font-family:"Silkscreen","IBM Plex Sans",sans-serif;font-size:15px;letter-spacing:.5px;color:var(--ouro)}
+  h1{font-size:28px;line-height:1.15;margin:0 0 6px;letter-spacing:-.3px}
+  .rodape{margin-top:28px;color:var(--suave);font-size:13px;border-top:1px solid var(--linha);padding-top:12px}
+  @media (max-width:480px){ h1{font-size:23px} body{font-size:14.5px} }
+
+  .faixa{padding:30px 16px 34px}
+  .lead{margin:6px 0 20px;color:#d6e6f2;font-size:16.5px;max-width:52ch}
+  .botao{display:inline-flex;align-items:center;gap:10px;background:var(--ouro);color:var(--marinho);
+    font-weight:700;text-decoration:none;border-radius:10px;padding:12px 18px;font-size:15.5px;
+    box-shadow:0 2px 0 #c99a1e}
+  .botao:hover{filter:brightness(1.05)}
+  .botao svg{width:20px;height:20px;flex:0 0 20px}
+  .grade{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px}
+  .card{background:var(--cartao);border:1px solid var(--linha);border-radius:12px;padding:14px 16px}
+  .card b{display:block;font-family:"Silkscreen","IBM Plex Sans",sans-serif;font-size:20px;color:var(--azul);letter-spacing:.3px}
+  .card span{color:var(--suave);font-size:14px}
+  h2{font-size:17px;margin:26px 0 6px;color:var(--marinho)}
+  p{margin:0 0 10px;max-width:68ch}
+  ul{margin:0 0 10px;padding-left:20px;max-width:68ch}
+  @media (max-width:560px){ .grade{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+  <div class="faixa"><div class="faixa-in">
+    <div class="marca">
+      <svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="1" width="14" height="1" fill="#0b2239"/><rect x="1" y="2" width="1" height="2" fill="#0b2239"/><rect x="2" y="2" width="12" height="2" fill="#ffd166"/><rect x="14" y="2" width="1" height="2" fill="#0b2239"/><rect x="1" y="4" width="14" height="1" fill="#0b2239"/><rect x="1" y="5" width="14" height="2" fill="#ff7b6b"/><rect x="2" y="5" width="1" height="2" fill="#fff"/><rect x="4" y="5" width="1" height="2" fill="#fff"/><rect x="6" y="5" width="1" height="2" fill="#fff"/><rect x="8" y="5" width="1" height="2" fill="#fff"/><rect x="10" y="5" width="1" height="2" fill="#fff"/><rect x="12" y="5" width="1" height="2" fill="#fff"/><rect x="14" y="5" width="1" height="2" fill="#fff"/><rect x="1" y="7" width="1" height="1" fill="#ff7b6b"/><rect x="3" y="7" width="1" height="1" fill="#ff7b6b"/><rect x="5" y="7" width="1" height="1" fill="#ff7b6b"/><rect x="7" y="7" width="1" height="1" fill="#ff7b6b"/><rect x="9" y="7" width="1" height="1" fill="#ff7b6b"/><rect x="11" y="7" width="1" height="1" fill="#ff7b6b"/><rect x="13" y="7" width="1" height="1" fill="#ff7b6b"/><rect x="1" y="8" width="1" height="5" fill="#0b2239"/><rect x="14" y="8" width="1" height="5" fill="#0b2239"/><rect x="2" y="8" width="12" height="5" fill="#eaf3fa"/><rect x="3" y="9" width="5" height="4" fill="#2f80c4"/><rect x="4" y="10" width="3" height="2" fill="#4fd8e8"/><rect x="4" y="10" width="1" height="1" fill="#7ce8de"/><rect x="9" y="9" width="3" height="4" fill="#1d5e92"/><rect x="11" y="12" width="1" height="1" fill="#ffd166"/><rect x="1" y="13" width="14" height="1" fill="#0b2239"/><rect x="1" y="14" width="14" height="1" fill="#8fadc4"/></svg>
+      <span>Mercatilim</span>
+    </div>
+    <h1>Monte e faça crescer o seu mercadinho</h1>
+    <p class="lead">Um jogo de loja em pixel art para Android: atenda clientes, compre melhorias, abra setores novos e transforme a vendinha da esquina numa rede nacional.</p>
+    <a class="botao" href="https://play.google.com/store/apps/details?id=br.com.joao.mercadinho" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#0b2239" d="M4 2.8v18.4c0 .5.5.8.9.6L20.6 12.6c.5-.3.5-.9 0-1.2L4.9 2.2c-.4-.2-.9.1-.9.6z"/></svg>
+      Baixar no Google Play
+    </a>
+  </div></div>
+
+  <div class="corpo">
+    <div class="grade">
+      <div class="card"><b>72</b><span>produtos para desbloquear</span></div>
+      <div class="card"><b>376</b><span>missões em 20 capítulos</span></div>
+      <div class="card"><b>Offline</b><span>joga sem internet</span></div>
+    </div>
+
+    <h2>Sobre o jogo</h2>
+    <p>Os clientes entram, pegam produtos nas prateleiras e pagam no caixa. Você investe o que ganha em espaço, marketing, equipe e extras como café, sorvetes e delivery, e desbloqueia produtos que valem cada vez mais.</p>
+    <ul>
+      <li>Passo a passo para quem está começando.</li>
+      <li>Save no aparelho e save na nuvem com o Google Play Games.</li>
+      <li>Grátis, com anúncios opcionais e a compra única "Sem anúncios".</li>
+    </ul>
+
+    <h2>Privacidade e contato</h2>
+    <p>Leia a <a href="privacidade.html">Política de Privacidade</a>. Dúvidas sobre o jogo: veja o <a href="privacidade.html#contato">contato</a> no fim da política.</p>
+
+    <p class="rodape">Mercatilim · <a href="privacidade.html">Política de Privacidade</a> · <a href="https://play.google.com/store/apps/details?id=br.com.joao.mercadinho" rel="noopener">Google Play</a> · <a href="../">Outros jogos</a></p>
+  </div>
+</body>
+</html>
